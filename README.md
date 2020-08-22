@@ -1,5 +1,9 @@
-# How to run
+## Prerequisites
+java 11
+## How to run
+```
 ./gradlew bootRun
+```
 
 ## Usage
 
@@ -11,11 +15,14 @@ curl --request POST \
 	"from":"USD",
 	"to":"BRL",
 	"amount":10
-}```
+}
+```
 
-Possible currencies: EUR, AED, ARS, AUD, BGN, BRL, BSD, CAD, CHF, CLP, CNY, COP, CZK, DKK, DOP, EGP, FJD, GBP, GTQ, HKD, 
-HRK, HUF, IDR, ILS, INR, ISK, JPY, KRW, KZT, MVR, MXN, MYR, NOK, NZD, PAB, PEN, PHP, PKR, PLN, PYG, RON, RUB, SAR, SEK, 
-SGD, THB, TRY, TWD, UAH, USD, UYU, ZAR
+## Possible currencies for request body: 
+CAD, HKD, ISK, PHP, DKK, HUF, CZK, AUD, RON, SEK, IDR, INR, BRL, RUB, HRK, JPY, THB, CHF, SGD, PLN, BGN, TRY, CNY, NOK, NZD, ZAR, USD, MXN, ILS, GBP, KRW, MYR
 
 ## Tests
-Run ./gradlew test when netty server is running
+Run below command when application server is running on localhost:8080
+```
+./gradlew test
+```
