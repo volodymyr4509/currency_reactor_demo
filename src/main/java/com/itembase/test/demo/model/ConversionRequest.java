@@ -15,6 +15,15 @@ public class ConversionRequest {
     @NotNull
     private Double amount;
 
+    public ConversionRequest(@NotNull @Size(min = 3, max = 3, message = "wrong currency format") String from, @NotNull @Size(min = 3, max = 3, message = "wrong currency format") String to, @NotNull Double amount) {
+        this.from = from;
+        this.to = to;
+        this.amount = amount;
+    }
+
+    public ConversionRequest() {
+    }
+
     public String getFrom() {
         return from;
     }
